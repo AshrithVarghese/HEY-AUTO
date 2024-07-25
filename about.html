@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEY! AUTO</title>
+    <link rel="stylesheet" href="about.css">
+    <script src="https://kit.fontawesome.com/c8d63558d6.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&family=Text+Me+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="navigations">
+            <h1><a href="index.html">&nbsp;HEY! AUTO</a></h1>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="booking.html">BOOKING</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="patner.html">PATNER</a></li>
+            </ul>
+            <input type="search" placeholder="Search here...">
+            <img onclick="window.location.href='profile.html'" src="images/profile-img.png">
+        </div>
+        
+    </nav>
+
+    <div class="menu-bar">
+        <h1>HEY! AUTO</h1>
+        <i onclick=showSidebar() class="fa-solid fa-bars fa-xl" style="color: #000000;"></i>
+        <img onclick="window.location.href='profile.html'" src="images/profile-img.png">
+    </div>
+
+
+    <section class="about-us" id="about-us">
+        
+
+        <div class="sidebar">
+            <i onclick=closeSidebar() class="fa-solid fa-xmark fa-xl" style="color: #000000;"></i>
+            <h1>HEY! AUTO</h1>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="booking.html">BOOKING</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="#about-us">ABOUT</a></li>
+                <li><a href="patner.html">PATNER LOGIN</a></li>
+            </ul>
+        </div>
+        <h1 class="about-us-main-heading">About Us</h1>
+        <div class="mission-vision">
+            <div class="mission-vision-multi-text">
+                <span class=" text first-text">Our</span>
+                <span class="text sec-text">Vision</span>
+            </div>
+            <script>
+                const text = document.querySelector(".sec-text");
+                const textLoad = () => {
+                    setTimeout(() => {
+                        text.textContent = "Vision";
+                    }, 0);
+                    setTimeout(() => {
+                        text.textContent = "Mission";
+                    }, 4000); //1s = 1000 milliseconds
+                }
+                textLoad();
+                setInterval(textLoad, 8000);
+            </script>
+            <p>
+                Founded in 2023, Hey! Auto is committed to revolutionizing urban transportation by providing a reliable and convenient autorickshaw booking service. Our mission is to make daily commuting hassle-free and affordable. With a team of dedicated professionals and state-of-the-art technology, we strive to offer a seamless experience for our users, ensuring safety, comfort, and punctuality. At Hey!Auto, we are passionate about connecting people and places, one ride at a time.
+            </p>
+        </div>
+        <div class="our-backbone">
+            <h1 class="our-backbone-main-heading">Our Backbone</h1>
+            <div class="founder">
+                <img src="images/person-img.jpg">
+                <h3>Founder</h3>
+                <p>Mr......</p>
+            </div>
+            <div class="co-founder">
+                <div class="co-founder1">
+                    <img src="images/person-img.jpg">
+                    <h3>Co-Founder</h3>
+                    <p>Mr......</p>
+                </div>
+                <div class="co-founder2">
+                    <img src="images/person-img.jpg">
+                    <h3>Co-Founder</h3>
+                    <p>Mr......</p>
+                </div>
+            </div>
+    </section>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links-newsletter">
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html"> Home</a></li>
+                        <li><a href="booking.html"> Booking</a></li>
+                        <li><a href="contact.html"> Contact Us</a></li>
+                        <li><a href="#about-us"> About Us</a></li>
+                        <li><a href="patner.html"> Patner</a></li>
+                        <li><a href="sitemap.html"> Site Map</a></li>
+                    </ul>            
+                </div>
+                <div class="newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for free to get the latest updates and offers.<br>Currently we are providing limited subscriptions.
+                    </p>
+                    <form action="https://formspree.io/f/xeojoywp" method="post">
+                        <label>Name : </label>
+                        <input type="text" name="name" placeholder="Enter your name" required><br><br>
+                        <label>Email : </label>
+                        <input type="email" name="email" placeholder="Enter your email" required><br><br>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="developer-info">
+                <p>&copy; 2024 | All rights reserved<br>Developed by <a href="https://www.instagram.com/ashrith_varghese">Ashrith Varghese</a></p>
+            </div>
+            <button class="go-up">
+                <a href="#about-us"><i class="fa-solid fa-angles-up fa-bounce fa-2xl" style="color: #4f5648;"></i></a>
+            </button>
+                        
+    </footer>
+</body>
+</html>

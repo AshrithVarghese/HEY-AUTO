@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEY! AUTO</title>
+    <link rel="stylesheet" href="booking.css">
+    <script src="https://kit.fontawesome.com/c8d63558d6.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&family=Text+Me+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="navigations">
+            <h1><a href="index.html">&nbsp;HEY! AUTO</a></h1>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="booking.html">BOOKING</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="patner.html">PATNER</a></li>
+            </ul>
+            <input type="search" placeholder="Search here...">
+            <img onclick="window.location.href='profile.html'" src="images/profile-img.png">
+        </div>
+        
+    </nav>
+
+    <div class="menu-bar">
+        <h1>HEY! AUTO</h1>
+        <i onclick=showSidebar() class="fa-solid fa-bars fa-xl" style="color: #000000;"></i>
+        <img onclick="window.location.href='profile.html'" src="images/profile-img.png">
+    </div>
+
+
+    <section class="booking" id="booking">
+        <div class="sidebar">
+            <i onclick=closeSidebar() class="fa-solid fa-xmark fa-xl" style="color: #000000;"></i>
+            <h1>HEY! AUTO</h1>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="booking.html">BOOKING</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="patner.html">PATNER</a></li>
+            </ul>
+        </div>
+        <div class="booking-home-content">
+            <div class="booking-home-text">
+                <h1>BOOK YOUR AUTO RIDE</h1>
+                <p>
+                    Book your autorickshaw ride with ease! Our online booking service connects you with trusted drivers in your area. With real-time tracking and secure payment options, we ensure a hassle-free experience. Whether you're commuting to work or exploring the city, we've got you covered. Download our app or book now to experience the convenience of autorickshaw booking at your fingertips!
+                </p>
+                <button onclick="window.location.href='booking.html'"><b>Book A Ride</b></button>
+            </div>
+            <div class="fare-estimator">
+                <h1>Fare Estimator</h1>
+                <p>Enter your pickup and drop-off locations to estimate the fare.<br>
+                    <span class="notice-text">This feature is under development</span>
+                </p>
+                <form>
+                    <label>Pickup : </label>
+                    <input type="text" placeholder="Pickup Location" name="pickup" required><br><br>
+                    <label>Dropoff : </label>
+                    <input type="text" placeholder="Drop-off Location" name="dropoff" required><br><br>
+                    <button type="submit">Estimate Fare</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links-newsletter">
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html"> Home</a></li>
+                        <li><a href="booking.html"> Booking</a></li>
+                        <li><a href="contact.html"> Contact Us</a></li>
+                        <li><a href="#about-us"> About Us</a></li>
+                        <li><a href="patner.html"> Patner</a></li>
+                        <li><a href="sitemap.html"> Site Map</a></li>
+                    </ul>            
+                </div>
+                <div class="newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for free to get the latest updates and offers.<br>Currently we are providing limited subscriptions.
+                    </p>
+                    <form action="https://formspree.io/f/xeojoywp" method="post">
+                        <label>Name : </label>
+                        <input type="text" name="name" placeholder="Enter your name" required><br><br>
+                        <label>Email : </label>
+                        <input type="email" name="email" placeholder="Enter your email" required><br><br>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="developer-info">
+                <p>&copy; 2024 | All rights reserved<br>Developed by <a href="https://www.instagram.com/ashrith_varghese">Ashrith Varghese</a></p>
+            </div>
+            <button class="go-up">
+                <a href="#booking"><i class="fa-solid fa-angles-up fa-bounce fa-2xl" style="color: #4f5648;"></i></a>
+            </button>
+                        
+    </footer>
+</body>
+</html>
